@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  PresentationMacOS
+
+  Created by a on 12/5/22.
+  
+*/
+
+"LOCATION_ALERT_TEXT" = "Please, enable location access";
+"LOCATION_ALERT_BUTTON" = "Open settings";
