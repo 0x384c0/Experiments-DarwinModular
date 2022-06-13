@@ -15,19 +15,19 @@ struct WeatherItemRow: View {
             Text(dvo.date)
             VStack(alignment: .leading) {
                 HStack {
-                    Text("Temperature:")
+                    Text("\("TEMPERATURE".localized):")
                     Spacer()
                     Text(dvo.temp)
                 }
                 Spacer(minLength: 8)
                 HStack {
-                    Text("Humidity:")
+                    Text("\("HUMIDITY".localized):")
                     Spacer()
                     Text(dvo.humidity)
                 }
                 Spacer(minLength: 8)
                 HStack {
-                    Text("Wind Speed:")
+                    Text("\("WIND_SPEED".localized):")
                     Spacer()
                     Text(dvo.windSpeed)
                 }
