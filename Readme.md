@@ -36,4 +36,6 @@ Feature split in to 4 modules
 - [data mapping](/PresentationMacOS/Tests/WeatherDvoTests.swift)
 
 ### TODO
+- replace https://openweathermap.org/api with https://www.weatherapi.com/
+- make a fancy app design, based on weatherapi.com icons
 - add swiftlint
