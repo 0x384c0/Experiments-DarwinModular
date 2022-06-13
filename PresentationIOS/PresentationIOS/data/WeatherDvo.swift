@@ -21,7 +21,7 @@ struct WeatherDvo {
     init(_ model: WeatherModel) {
         date = String((model.date ?? "TODAY".localized).split(separator: " ").first ?? "")
         temp = "\(model.mainModel?.temp ?? 0) \(TEMP_UNIT)"
-        humidity = "\(model.mainModel?.humidity ?? 0)\(HUMIDITY_UNIT)"
+        humidity = "\(model.mainModel?.humidity ?? 0) \(HUMIDITY_UNIT)"
         windSpeed = "\(model.windModel?.speed ?? 0) \(SPEED_UNIT)"
     }
 
