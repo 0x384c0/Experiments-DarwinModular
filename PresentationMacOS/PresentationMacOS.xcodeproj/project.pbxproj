@@ -88,6 +88,7 @@
 		4915D92D282B89010075A57D /* di */ = {
 			isa = PBXGroup;
 			children = (
+				491F3BF0282BC9D40008C419 /* ModuleInitializer.swift */,
 				4915D92E282B890D0075A57D /* PresentationModule.swift */,
 			);
 			path = di;
@@ -163,7 +164,6 @@
 				49BFC66928290CA90053E0A2 /* ui */,
 				49BFC628282903A50053E0A2 /* Main.storyboard */,
 				49BFC61F282903A40053E0A2 /* AppDelegate.swift */,
-				491F3BF0282BC9D40008C419 /* ModuleInitializer.swift */,
 				49BFC651282906D30053E0A2 /* Supporing Files */,
 			);
 			path = PresentationMacOS;
