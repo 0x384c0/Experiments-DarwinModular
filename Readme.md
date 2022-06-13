@@ -3,21 +3,22 @@ A sample darwin app that shows today weather and forecast for current device loc
 
 ![tests workflow](https://github.com/0x384c0/Experiments-DarwinModular/actions/workflows/build-darwin.yml/badge.svg)
 
-![Demo](/media/app.jpg)
+<img src="/media/app.jpg" height="300"> <img src="/media/app_ios.jpeg" height="300">
 
 ### Build Requrements
 - Xcode 13.2.1
 
 ### Modules
 App has single feature - WeatherApp\
-Feature split in to 3 modules
-- [PresentationMacOS](/PresentationMacOS) - constains Presentation Layer
+Feature split in to 4 modules
+- [PresentationMacOS](/PresentationMacOS) - contains MacOS Presentation Layer
+- [PresentationIOS](/PresentationIOS) - contains iOS Presentation Layer
 - [Domain](/Domain) - contains Domain layer with business logic
 - [Data](/Data) - contains Data layer with REST API requests
   
 ### Communication between layers
 
-1. [UI](/PresentationMacOS/PresentationMacOS/ui/WeatherViewController.swift) calls functions from [ViewModel](/PresentationMacOS/PresentationMacOS/ui/WeatherViewModel.swift).
+1. UI ([MacOS](/PresentationMacOS/PresentationMacOS/ui/WeatherViewController.swift)/[iOS](/PresentationIOS/PresentationIOS/ui/WeatherView.swift)) calls functions from ViewModel ([MacOS](/PresentationMacOS/PresentationMacOS/ui/WeatherViewModel.swift)/[iOS](/PresentationIOS/PresentationIOS/ui/WeatherViewModel.swift)).
 1. ViewModel executes Use cases from [Interactor](/Domain/Sources/Domain/interactors/WeatherInteractorImpl.swift).
 1. Use case obtains data from [DataSource](/Data/Sources/Data/datasource/WeatherRemoteDatasourceImpl.swift)
 1. Repository returns data from a [Api](/Data/Sources/Data/datasource/api/OpenWeatherMapApi.swift).
@@ -35,5 +36,4 @@ Feature split in to 3 modules
 - [data mapping](/PresentationMacOS/Tests/WeatherDvoTests.swift)
 
 ### TODO
-- add PresentationIOS
 - add swiftlint
