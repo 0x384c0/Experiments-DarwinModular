@@ -1,8 +1,8 @@
 //
 //  WeatherDvo.swift
-//  PresentationMacOS
+//  PresentationIOS
 //
-//  Created by a on 11/5/22.
+//  Created by  on 13/6/22.
 //
 
 import Foundation
@@ -19,9 +19,21 @@ struct WeatherDvo {
     let windSpeed: String
 
     init(_ model: WeatherModel) {
-        date = String(model.date?.split(separator: " ").first ?? "")
+        date = String((model.date ?? "TODAY".localized).split(separator: " ").first ?? "")
         temp = "\(model.mainModel?.temp ?? 0) \(TEMP_UNIT)"
         humidity = "\(model.mainModel?.humidity ?? 0)\(HUMIDITY_UNIT)"
         windSpeed = "\(model.windModel?.speed ?? 0) \(SPEED_UNIT)"
+    }
+
+    init(
+        date: String,
+        temp: String,
+        humidity: String,
+        windSpeed: String
+    ) {
+        self.date = date
+        self.temp = temp
+        self.humidity = humidity
+        self.windSpeed = windSpeed
     }
 }
