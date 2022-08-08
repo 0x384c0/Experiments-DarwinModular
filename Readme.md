@@ -5,7 +5,7 @@ A sample darwin app that shows today weather and forecast for current device loc
 
 <img src="/media/app.jpg" height="300"> <img src="/media/app_ios.jpeg" height="300">
 
-### Build Requrements
+### Build Requirements
 - Xcode 13.2.1
 
 ### Modules
