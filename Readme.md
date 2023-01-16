@@ -39,3 +39,4 @@ Feature split in to 4 modules
 - replace https://openweathermap.org/api with https://www.weatherapi.com/
 - make a fancy app design, based on weatherapi.com icons
 - add swiftlint
+- use [dedicated data mappers](https://medium.com/jesus-medina/mapping-data-between-layers-db8ad93f0f8f) for each layer instead of protocol inheritance 
